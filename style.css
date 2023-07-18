@@ -219,6 +219,7 @@ header nav ul{
     /* banner */
     .banner{
         flex-direction: column;
+        align-items: start;
     }
     .banner-text-content{
         padding: 140px 100px;
