@@ -1,0 +1,235 @@
+body{
+    margin: 0;
+  
+    font-family: 'Work Sans', sans-serif;
+
+}
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;700;800&family=Work+Sans:wght@400;600;700;800&display=swap');
+
+/* header section start */
+header nav{
+    padding: 0px 120px;
+  background-color: white;
+    display: flex;
+  
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  align-items: center;
+ 
+    justify-content: space-between;
+}
+header nav .logo{
+    display: flex;
+    align-items: center;
+}
+header nav .logo img{
+width: 86.041px;
+   height: 40px;;
+}
+ .logo-name {
+    color: #0B0223;
+    font-size: 45px;
+    margin-left: 20px;
+ }
+ .logo-name span{
+    color: deeppink;
+    
+ }
+header nav ul{
+    display: flex;
+   
+    align-items: center;
+ 
+}
+header nav ul li{
+    list-style: none;
+
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 40px 30px;
+    font-size: 18px;
+  
+}
+header nav ul li:nth-child(3){
+    background-color:  rgba(11, 2, 35, 0.10);
+    padding: 5px 0px;
+    border-radius: 8px;
+}
+header nav ul li:nth-child(3) img{
+ width: 20px;
+   margin-left: 10px;
+   
+}
+.header nav ul li:nth-child(3) a{
+    display: flex;
+    align-items: center;
+   
+    
+}
+/* header banner section */
+.banner{
+   display: flex;
+  align-items: center;
+    background-repeat: no-repeat;
+gap: 50px;
+}
+.banner-text-content{
+    background: url(images/Group\ 14.png);
+background-size:100%;
+width: 50%;
+padding: 140px 0;
+
+padding-left: 240px;
+/*
+display: flex;
+
+justify-content: center;
+align-items: center;
+flex-direction: column;
+*/
+}
+.banner-title{
+    color: #0B0223;
+  margin: 0;
+    font-size: 48px;
+    font-weight: 600;
+}
+.banner-title-big{
+    margin: 0;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 95px;
+    font-weight: 800;
+
+}
+.banner-description{
+    margin-top: 24px;
+}
+.banner-description p{
+    color: #534C64;
+    font-weight: 500;
+}
+.banner-description i{
+    margin-right: 10px;
+    color: #F948B2;
+    font-size: 20px;
+}
+.banner-btn a{
+    padding: 21px 40px;
+    border-radius: 40px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: 600;
+    display: inline-block;
+}
+.sign-in{
+    border-radius: 48px;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+}
+.rouge{
+    border-radius: 48px;
+background: #4EC5F7;
+margin-left: 24px;
+}
+.banner-image {
+    
+ padding-right: 240px;
+  
+   width: 50%;
+}
+.banner-image img{
+width: 100%;
+}
+/* responsive small devices */
+@media screen and (max-width:576px) {
+    /* header nav */
+    header nav{
+       padding: 0 40px;
+        flex-direction: column;
+        align-self: start;
+    }
+.logo-name{
+    margin-left: 10px;
+}
+header nav ul{
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+   
+}
+header nav ul li a{
+    padding: 0;
+}
+header nav ul li:nth-child(3){
+    padding: 10px 20px;
+    border-radius: 0;
+}
+header nav ul li:nth-child(3) a img{
+margin-left: 0;
+width: 15px;
+
+}
+/* banner section */
+
+.banner{
+  
+ flex-direction: column-reverse;
+ align-items: start;
+}
+.banner-text-content{
+    padding: 131px 40px;
+    width: 100%;
+}
+.banner-title{
+    font-size: 30px;
+}
+.banner-title-big{
+    font-size: 50px;
+}
+.banner-btn a{
+   padding:  16px 30px;
+}
+.rouge{
+    margin-left: 10px;
+}
+.banner-image{
+    padding: 30px;
+    width: 100%;
+}
+.banner-image img{
+    width: 80%;
+}
+}
+/* medium devices responsive */
+@media screen and (min-width:576px) and (max-width:960px){
+    /* header nav */
+    header nav{
+        flex-direction: column;
+    }
+header nav ul{
+    flex-direction: column;
+    gap: 20px;
+}
+    /* banner */
+    .banner{
+        flex-direction: column;
+    }
+    .banner-text-content{
+        padding: 140px 100px;
+    }
+    .banner-image{
+        width: 100%;
+        padding-right: 0;
+        padding: 20px 100px;
+    }
+    .banner-image img{
+        width: 80%;
+    }
+}
+
